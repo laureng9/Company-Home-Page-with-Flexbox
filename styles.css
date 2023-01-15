@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+
+body {
+    font-family: 'Dongle', sans-serif;
+    font-size: 2rem;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+header {
+    margin: 0px 10%;
+}
+
+.banner-top {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Vast Shadow', cursive;
+    font-size: 100px;
+}
+
+h2,
+h3,
+nav {
+    font-family: 'Fredoka One', cursive;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+nav li {
+    float: inline-end;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: white;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+    padding: 20px;
+}
+
+.services {
+    font-weight: 600px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.services div {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 10px;
+    box-shadow: 2px 2px 8px #ccc;
+    text-align: center;
+}
+
+.services div img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.services div p {
+    font-size: 1.2em;
+    margin: 15px;
+}
+
+.banner-bottom {
+    opacity: 0.3;
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+}
+
+.tutors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tutor {
+    width: 400px;
+    text-align: center;
+    padding: 80px;
+}
+
+.tutor>img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-items p {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.footer-image {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .services,
+    .contact-items {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 10px;
+    }
+}
